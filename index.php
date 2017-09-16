@@ -11,23 +11,9 @@ Licence URI: http://www.os-templates.com/template-terms
 <title>Touch of Purple</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <link rel="stylesheet" href="layout/styles/layout.css" type="text/css" />
-<script type="text/javascript" src="layout/scripts/jquery.min.js"></script>
-<!-- Waterwheel Carousel -->
-<script type="text/javascript" src="layout/scripts/carousel/jquery.waterwheelCarousel.min.js"></script>
-<script type="text/javascript" src="layout/scripts/carousel/jquery.waterwheelCarousel.setup.js"></script>
-<!-- / Waterwheel Carousel -->
 </head>
 <body id="top">
-<div class="wrapper col1">
-  <div id="header">
-    <div class="fl_left">
-      <h1><a href="index.html">Touch of Purple</a></h1>
-      <p>Free Website Template</p>
-    </div>
-    <div class="fl_right"><a href="#"><img src="images/demo/468x60.gif" alt="" /></a></div>
-    <br class="clear" />
-  </div>
-</div>
+
 <!-- ####################################################################################################### -->
 <div class="wrapper col2">
   <div id="topbar">
@@ -35,25 +21,7 @@ Licence URI: http://www.os-templates.com/template-terms
       <ul>
         <li class="active"><a href="index.html">Home</a></li>
         <li><a href="pages/style-demo.html">Style Demo</a></li>
-        <li><a href="pages/full-width.html">Full Width</a></li>
-        <li><a href="#">DropDown</a>
-          <ul>
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-          </ul>
-        </li>
-        <li class="last"><a href="#">A Long Link Text</a></li>
       </ul>
-    </div>
-    <div id="search">
-      <form action="#" method="post">
-        <fieldset>
-          <legend>Site Search</legend>
-          <input type="text" value="Search Our Website&hellip;"  onfocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;" />
-          <input type="submit" name="go" id="go" value="Search" />
-        </fieldset>
-      </form>
     </div>
     <br class="clear" />
   </div>
