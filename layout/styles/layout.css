@@ -10,8 +10,6 @@ File: Layout CSS
 
 @import url("navi.css");
 @import url("forms.css");
-@import url("tables.css");
-@import url("featured_slide.css");
 
 html{overflow-y:scroll;}
 body{margin:0; padding:0; font-size:13px; font-family:Georgia, "Times New Roman", Times, serif; color:#999999; background-color:#151515;}
@@ -74,33 +72,10 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 #breadcrumb ul li{display:inline;}
 #breadcrumb ul li.current a{text-decoration:underline;}
 
-/* ----------------------------------------------Homepage Featured Intro------------------------------------- */
-
-#featured_intro{padding:0 0 20px 0;}
-#featured_intro .fl_left{display:block; float:left; width:470px;}
-#featured_intro .fl_left h2{margin:0; padding:0; font-size:120px; color:#585858; background-color:#151515; text-transform:uppercase; line-height:normal;}
-#featured_intro .fl_right{display:block; float:right; width:450px; padding-top:65px; text-align:justify; line-height:1.5em;}
-#featured_intro .fl_right .readmore{display:block; text-align:right; font-weight:bold;}
-
 /* ----------------------------------------------Content------------------------------------- */
 
 #container{padding:20px 0;}
 #content{display:block; float:left; width:600px;}
-
-/* Comments */
-
-#comments{margin-bottom:40px;}
-#comments .commentlist{margin:0; padding:0;}
-#comments .commentlist ul{margin:0; padding:0; list-style:none;}
-#comments .commentlist li.comment_odd, #comments .commentlist li.comment_even{margin:0 0 10px 0; padding:15px; list-style:none;}
-#comments .commentlist li.comment_odd{color:#CCCCCC; background-color:#333333;}
-#comments .commentlist li.comment_odd a{color:#E7BCE2; background-color:#333333;}
-#comments .commentlist li.comment_even{color:#CCCCCC; background-color:#1E1E1E;}
-#comments .commentlist li.comment_even a{color:#E7BCE2; background-color:#1E1E1E;}
-#comments .commentlist .author .name{font-weight:bold;}
-#comments .commentlist .submitdate{font-size:smaller;}
-#comments .commentlist p{margin:10px 5px 10px 0; padding:0; font-weight:normal; text-transform:none;}
-#comments .commentlist li .avatar{float:right; border:1px solid #EEEEEE; margin:0 0 0 10px;}
 
 /* ----------------------------------------------Column------------------------------------- */
 
