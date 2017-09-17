@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="css.css" type="text/css" />
 </head>
 
-<body >
+<body class="bg">
 
  <div class="navbar">
   <a href="index.php">Index</a>
@@ -16,7 +16,7 @@
 <div class="main">
   <p>Some text some text some text some text..</p>
 </div> 
-	
+
 <?php
 $url = getenv('JAWSDB_URL');
 		$dbparts = parse_url($url);

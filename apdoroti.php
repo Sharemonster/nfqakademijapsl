@@ -3,7 +3,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 		<title>Apdorotas uzsakymas</title>
 	</head>
-	<body class="center">
+	<body class="bg">
 
 		 <div class="navbar">
   <a href="index.php">Index</a>
