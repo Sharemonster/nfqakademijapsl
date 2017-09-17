@@ -4,7 +4,7 @@
 		<title>Apdorotas uzsakymas</title>
 		<link rel="stylesheet" href="css.css" type="text/css" />
 	</head>
-	<body class="bg">
+	<body class="bg spacetop">
 		<div class="navbar">
   			<a href="index.php">Index</a>
   			<a href="notindex.php">Not Index</a>

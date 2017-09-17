@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="css.css" type="text/css" />
 	</head>
 
-	<body class="bg">
+	<body class="bg spacetop">
 
  		<div class="navbar">
   			<a href="index.php">Index</a>
