@@ -18,13 +18,14 @@
 		$pavarde = $_POST['pavarde'];
 		$adresas = $_POST['adresas'];
 		$kiekis = $_POST['kiekis'];
+		$kaina =  $kiekis*12578631;
 		?>
 
 		<p>Aciu,</p>
 		<p>kad perkate</p>
 
 		<?php
-			echo $kiekis*12578631.' eur<br>';
+			echo $kaina.' eur<br>';
 			$conn = new mysqli($hostname, $username, $password, $database);
 
 			if ($conn->connect_error) {

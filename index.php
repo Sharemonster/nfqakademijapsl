@@ -12,7 +12,6 @@
   </div>
 
   <p>Uzsakymo forma</p>
-  <div>
   <FORM ACTION="apdoroti.php" method=post>
     <table border=0>
       <tr>
@@ -39,7 +38,6 @@
       </tr>
     </table>
   </form>
-  </div>
 
 </body>
 
