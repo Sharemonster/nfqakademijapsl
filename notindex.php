@@ -7,6 +7,16 @@
 </head>
 
 <body >
+
+ <div class="navbar">
+  <a href="index.php">Index</a>
+  <a href="notindex.php">Not Index</a>
+</div>
+
+<div class="main">
+  <p>Some text some text some text some text..</p>
+</div> 
+	
 <?php
 $url = getenv('JAWSDB_URL');
 		$dbparts = parse_url($url);

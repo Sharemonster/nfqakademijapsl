@@ -7,6 +7,12 @@
 </head>
 
 <body>
+
+ <div class="navbar">
+  <a href="index.php">Index</a>
+  <a href="notindex.php">Not Index</a>
+</div>
+
   <div class="center">
     <img src="images/product.png"/>
   </div>
