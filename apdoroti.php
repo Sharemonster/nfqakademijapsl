@@ -24,7 +24,7 @@
 		<p>kad perkate</p>
 
 		<?php
-			echo $vardas.' eur<br>';
+			echo $kiekis*12578631.' eur<br>';
 			$conn = new mysqli($hostname, $username, $password, $database);
 
 			if ($conn->connect_error) {
