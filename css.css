@@ -10,7 +10,7 @@
     width: 100%;
 }
 
-.navbar a {
+.navbar a{
     float: left;
     display: block;
     color: #f2f2f2;
@@ -25,4 +25,7 @@
 
 .bg{
 	background-color: #232426;
+}
+p, td, th{
+	color: #f2f2f2;
 }

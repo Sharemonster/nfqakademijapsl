@@ -28,7 +28,7 @@
 
 		<p>Aciu,</p>
 		<p>kad perkate</p>
-		Kaina 
+		<p>Kaina:  </p>
 
 		<?php
 			echo $kaina.' eur<br>';
