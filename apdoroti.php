@@ -17,27 +17,37 @@
 		$password = $dbparts['pass'];
 		$database = ltrim($dbparts['path'],'/');
 
-		$qtybases = $_POST['qtybases'];
-		$qtystems = $_POST['qtystems'];
-		$qtytops = $_POST['qtytops'];
+		$vardas = $_POST['vardas'];
+		$pavarde = $_POST['pavarde'];
+		$adresas = $_POST['adresas'];
+		$kiekis = $_POST['kiekis'];
+		$a = mt_rand(10000000000, 99999999999)
 		?>
 
-		<p>Thank you!</p>
-		<p>Your order for:</p>
+		<p>Aciu,</p>
+		<p>kad perkate</p>
 
 		<?php
-		echo $qtybases.' bases<br>';
-		echo $qtystems.' stems<br>';
-		echo $qtytops.' tops<br>';
+		echo $vardas.' eur<br>';
 		$conn = new mysqli($hostname, $username, $password, $database);
 
 // Check connection
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    die("Nepavyko: " . $conn->connect_error);
 }
 else{
-echo "Connection was successfully established!";
+echo "Pavyko";
 }
+$sql = "INSERT INTO uzsakymai (id, vardas, pavarde, adresas, kiekis)
+VALUES ($id, '$vardas', '$pavarde', '$adresas', '$kiekis')";
+
+if ($conn->query($sql) === TRUE) {
+    echo "Prideta";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
 		?>
 
 		<p>was processed.</p>

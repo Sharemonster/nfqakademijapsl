@@ -22,21 +22,26 @@
         &nbsp;</td>
       </tr>
       <tr>
-        <td>Bases</td>
-        <td align="center"><input type="text" name="qtybases" size="3" maxlength="3"></td>
+        <td>Vardas</td>
+        <td align="center"><input type="text" name="vardas" size="3" maxlength="3"></td>
       </tr>
       <tr>
-        <td>Stems</td>
-        <td align="center"><input type="text" name="qtystems" size="3" maxlength="3"></td>
+        <td>Pavarde</td>
+        <td align="center"><input type="text" name="pavarde" size="3" maxlength="3"></td>
       </tr>
       <tr>
-        <td>Tops</td>
-        <td align="center"><input type="text" name="qtytops" size="3"
+        <td>Adresas</td>
+        <td align="center"><input type="text" name="adresas" size="3"
+        maxlength="3"></td>
+      </tr>
+      <tr>
+        <td>Kiekis</td>
+        <td align="center"><input type="text" name="kiekis" size="3"
         maxlength="3"></td>
       </tr>
       <tr>
         <td colspan="2" align="center"><br>
-        <input type="submit" value="Enter Order"></td>
+        <input type="submit" value="Uzsakyti"></td>
       </tr>
     </table>
   </form>
