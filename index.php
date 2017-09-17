@@ -11,32 +11,26 @@
     <img src="images/product.png"/>
   </div>
 
-  <p>Component Order Form</p>
-
+  <p>Uzsakymo forma</p>
+  <div>
   <FORM ACTION="apdoroti.php" method=post>
     <table border=0>
       <tr>
-        <td width=150>Item<br>
-        &nbsp;</td>
-        <td width=15>Quantity<br>
-        &nbsp;</td>
-      </tr>
-      <tr>
         <td>Vardas</td>
-        <td align="center"><input type="text" name="vardas" size="3" maxlength="3"></td>
+        <td align="center"><input type="text" name="vardas" size="20"></td>
       </tr>
       <tr>
         <td>Pavarde</td>
-        <td align="center"><input type="text" name="pavarde" size="3" maxlength="3"></td>
+        <td align="center"><input type="text" name="pavarde" size="20"></td>
       </tr>
       <tr>
         <td>Adresas</td>
-        <td align="center"><input type="text" name="adresas" size="3"
+        <td align="center"><input type="text" name="adresas" size="20"
         maxlength="3"></td>
       </tr>
       <tr>
         <td>Kiekis</td>
-        <td align="center"><input type="text" name="kiekis" size="3"
+        <td align="center"><input type="text" name="kiekis" size="20"
         maxlength="3"></td>
       </tr>
       <tr>
@@ -45,6 +39,7 @@
       </tr>
     </table>
   </form>
+  </div>
 
 </body>
 
