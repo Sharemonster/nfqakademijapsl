@@ -23,6 +23,7 @@
 
 		<p>Aciu,</p>
 		<p>kad perkate</p>
+		Kaina 
 
 		<?php
 			echo $kaina.' eur<br>';
@@ -31,16 +32,11 @@
 			if ($conn->connect_error) {
     			die("Nepavyko: " . $conn->connect_error);
 			}
-			else{
-				echo "Pavyko";
-			}
 			$sql = "INSERT INTO uzsakymai (vardas, pavarde, adresas, kiekis)
 			VALUES ('$vardas', '$pavarde', '$adresas', '$kiekis')";
 
-			if ($conn->query($sql) === TRUE) {
- 		    	echo "Prideta";
-			} else {
-			    echo "Error: " . $sql . "<br>" . $conn->error;
+			if ($conn->query($sql) !== TRUE) {
+ 		    	echo "Error: " . $sql . "<br>" . $conn->error;
 			}
 
 			$conn->close();
