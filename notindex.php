@@ -22,7 +22,8 @@ $url = getenv('JAWSDB_URL');
     			die("Nepavyko: " . $conn->connect_error);
 			}
 
-$result = mysqli_query($con,"SELECT * FROM uzsakymai");
+$sql = "SELECT * FROM uzsakymai";
+$result = $conn->query($sql);
 
 echo "<table border='1'>
 <tr>
@@ -32,7 +33,7 @@ echo "<table border='1'>
 <th>Kiekis</th>
 </tr>";
 
-while($row = mysqli_fetch_array($result))
+while($row = $result->fetch_assoc())
 {
 echo "<tr>";
 echo "<td>" . $row['vardas'] . "</td>";
@@ -42,10 +43,6 @@ echo "<td>" . $row['kiekis'] . "</td>";
 echo "</tr>";
 }
 echo "</table>";
-
-if ($conn->query($sql) !== TRUE) {
- 		    	echo "Error: " . $sql . "<br>" . $conn->error;
-			}
 
 mysqli_close($con);
 ?>
