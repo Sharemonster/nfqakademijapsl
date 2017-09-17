@@ -16,7 +16,7 @@ $url = getenv('JAWSDB_URL');
     			die("Nepavyko: " . $conn->connect_error);
 			}
 
-$sql = "DELETE FROM uzsakymai WHERE 0=0";
+$sql = "DELETE FROM uzsakymai WHERE 0==0";
 if ($conn->query($sql) !== TRUE) {
  		    	echo "Error: " . $sql . "<br>" . $conn->error;
 			}
