@@ -9,6 +9,14 @@
 		<p>&nbsp;</p>
 
 		<?php
+		$url = getenv('JAWSDB_URL');
+		$dbparts = parse_url($url);
+
+		$hostname = $dbparts['host'];
+		$username = $dbparts['user'];
+		$password = $dbparts['pass'];
+		$database = ltrim($dbparts['path'],'/');
+
 		$qtybases = $_POST['qtybases'];
 		$qtystems = $_POST['qtystems'];
 		$qtytops = $_POST['qtytops'];
@@ -21,6 +29,13 @@
 		echo $qtybases.' bases<br>';
 		echo $qtystems.' stems<br>';
 		echo $qtytops.' tops<br>';
+		$conn = new mysqli($hostname, $username, $password, $database);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+echo "Connection was successfully established!";
 		?>
 
 		<p>was processed.</p>
