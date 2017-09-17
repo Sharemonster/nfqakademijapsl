@@ -43,6 +43,10 @@ echo "</tr>";
 }
 echo "</table>";
 
+if ($conn->query($sql) !== TRUE) {
+ 		    	echo "Error: " . $sql . "<br>" . $conn->error;
+			}
+
 mysqli_close($con);
 ?>
 </body>
