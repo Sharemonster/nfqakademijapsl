@@ -39,7 +39,7 @@ else{
 echo "Pavyko";
 }
 $sql = "INSERT INTO uzsakymai (id, vardas, pavarde, adresas, kiekis)
-VALUES ($id, '$vardas', '$pavarde', '$adresas', '$kiekis')";
+VALUES ('$id', '$vardas', '$pavarde', '$adresas', '$kiekis')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Prideta";
