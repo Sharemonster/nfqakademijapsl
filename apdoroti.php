@@ -2,28 +2,28 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 		<title>Apdorotas uzsakymas</title>
+		<link rel="stylesheet" href="css.css" type="text/css" />
 	</head>
 	<body class="bg">
-
-		 <div class="navbar">
-  <a href="index.php">Index</a>
-  <a href="notindex.php">Not Index</a>
-</div>
+		<div class="navbar">
+  			<a href="index.php">Index</a>
+  			<a href="notindex.php">Not Index</a>
+		</div>
 
 		<?php
-		$url = getenv('JAWSDB_URL');
-		$dbparts = parse_url($url);
+			$url = getenv('JAWSDB_URL');
+			$dbparts = parse_url($url);
 
-		$hostname = $dbparts['host'];
-		$username = $dbparts['user'];
-		$password = $dbparts['pass'];
-		$database = ltrim($dbparts['path'],'/');
+			$hostname = $dbparts['host'];
+			$username = $dbparts['user'];
+			$password = $dbparts['pass'];
+			$database = ltrim($dbparts['path'],'/');
 
-		$vardas = $_POST['vardas'];
-		$pavarde = $_POST['pavarde'];
-		$adresas = $_POST['adresas'];
-		$kiekis = $_POST['kiekis'];
-		$kaina =  $kiekis*12578631;
+			$vardas = $_POST['vardas'];
+			$pavarde = $_POST['pavarde'];
+			$adresas = $_POST['adresas'];
+			$kiekis = $_POST['kiekis'];
+			$kaina =  $kiekis*12578631;
 		?>
 
 		<p>Aciu,</p>
